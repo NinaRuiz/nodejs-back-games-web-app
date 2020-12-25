@@ -1,4 +1,4 @@
-const Profile = require ('../schemas/profile');
+const Profile = require ('../schemas/user');
 const jwt = require('jsonwebtoken');
 const saltRounds = 10;
 const bcrypt = require('bcrypt');

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const Profile = require('../schemas/profile');
+const Profile = require('../schemas/user');
 
 const auth = async (req, res, next) => {
     const urlsExcluded = ['/register/(.*)', '/login/(.*)'];

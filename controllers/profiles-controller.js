@@ -1,4 +1,4 @@
-const Profile = require('../schemas/profile');
+const Profile = require('../schemas/user');
 
 const mongoosePaginate = require('mongoose-pagination');
 
