@@ -7,7 +7,7 @@ const saltRounds = 15;
 
 // Create profile
 // Route: POST 'register/'
-const createProfile = function(req,res){
+const createUser = function(req,res){
 
     // Try this:
     try{
@@ -48,7 +48,7 @@ const createProfile = function(req,res){
 
 // Delete profile
 // Route: DELETE 'login/:id'
-const deleteProfile = (req, res) =>{
+const deleteUser = (req, res) =>{
     // Declare Variables
     const userId = req.params.id;
 
@@ -78,7 +78,7 @@ const deleteProfile = (req, res) =>{
 
 // Get profile
 // Route: GET 'login/:username'
-const getProfile = (req, res) =>{
+const getUser = (req, res) =>{
     // Declare variables
     const username = req.params.username;
 
@@ -107,7 +107,7 @@ const getProfile = (req, res) =>{
 
 // Update profile
 // Route: POST 'login/:id'
-const updateProfile = (req, res) =>{
+const updateUser = (req, res) =>{
     const userId = req.params.id;
     const update = req.body;
 
@@ -135,7 +135,7 @@ const updateProfile = (req, res) =>{
 
 // Pagination characters
 // Route: GET 'login/paginate/:page'
-const getProfiles = (req, res) =>{
+const getUsers = (req, res) =>{
     const page = req.params.page;
     const itemsPerPage = 6;
 
@@ -162,9 +162,9 @@ const getProfiles = (req, res) =>{
 };
 
 module.exports = {
-  createProfile,
-  deleteProfile,
-  getProfile,
-  updateProfile,
-    getProfiles,
+  createUser,
+  deleteUser,
+  getUser,
+  updateUser,
+    getUsers,
 };

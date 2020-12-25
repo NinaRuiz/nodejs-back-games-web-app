@@ -11,7 +11,7 @@ var unless = require('express-unless');
 
 dotenv.config({path: '.env'});
 
-var profileRouter = require('./routes/profiles');
+var profileRouter = require('./routes/user');
 var loginRouter = require('./routes/login');
 var auth = require('./middleware/auth-middleware');
 

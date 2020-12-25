@@ -11,6 +11,6 @@ const usersSchema = new Schema({
     rol: {type: String, default: 'USER'}
 });
 
-const model = mongoose.model('profile', usersSchema);
+const model = mongoose.model('user', usersSchema);
 
 module.exports = model;
